@@ -10,11 +10,9 @@
       #BaAs { transform:rotate(-10deg); }
       #Ba { transform:rotate( 5deg); }
       #ApoI { transform:rotate( 20deg); }
-      #ApoI:hover {height:300px; width:250px; text-align: right;}
       #right {text-align: right}
       th { font-weight:normal; }
       th,td { font-size:80%; font-family: 'MedievalSharp', cursive; }
-      
     </style>
   </head>
 <body>
@@ -121,7 +119,7 @@
       </table>
     </div>
   </div>
-  <div class="card" id="ApoI" style= "top:470px; left:220px;"> <!-- Apprentice of Imerta-->
+  <div class="card" id="ApoI" onmouseover="view()" style= "top:470px; left:220px;"> <!-- Apprentice of Imerta-->
     <div class="container">
       <table width="200" height="240" border="1" cellspacing="0">
         <tr>
@@ -146,9 +144,14 @@
       </table>
     </div>
   </div>
+  <script>
+    function view(e) { 
+      console.log(e.target);
+      
+    }
+  </script>
 
-
-    <p> Version 0.7901 (Card Test 15)
+    <p> Version 0.4.15.2 (Card Test 15)
   </p>
 </body>
 </html>
