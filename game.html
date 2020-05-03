@@ -120,7 +120,7 @@
     </div>
   </div>
   <div class="card" id="ApoI" onmouseenter="view(this)" style= "top:470px; left:220px;"> <!-- Apprentice of Imerta-->
-    <div id="container">
+    <div class="container">
       <table width="200" height="240" border="1" cellspacing="0">
         <tr>
           <th width="160" height="24" colspan="4"> Apprentice of Imerta </th>
@@ -150,17 +150,14 @@
   <script>
     function view(el) { 
       console.log(el);
-      var container = getElementById("viewcontainer");
-      container.innerText = el.id
-      
-    var AoI = getElementById("container")
-    if AoI.hover = True:
-      AoI.height = 300px;
-      AoI.width = 300px;
+      var container = document.getElementById("viewcontainer");
+      while (container.firstChild) { container.removeChild(container.firstChild); }
+      var newCard = el.cloneNode(true);
+      container.appendChild(newCard);
     }
   </script>
 
-    <p> Version 0.4.15.5 (Card Test 15)
+    <p> Version 0.4.15.4 (Card Test 15)
   </p>
 </body>
 </html>
