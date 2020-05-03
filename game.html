@@ -3,19 +3,23 @@
     <link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet">
     <title> Shadowdale </title>
     <style>
-      #down {margin-bottom:-400;}
-      .card { box-shadow: 0 0px 12.5px 0 rgba(0,0,0,0.4); position:absolute; transition: 0.3s; border-radius: 17.5px; width: 200px; height: 240px; margin: 50px; border: solid lightgray 6.6px;} 
+      .card { background:white; box-shadow: 0 0px 12.5px 0 rgba(0,0,0,0.4); position:absolute; transition: 0.3s; border-radius: 17.5px; width: 200px; height: 240px; margin: 50px; border: solid lightgray 6.6px;} 
       .card img { border-radius: 5px 5px 0 0;}
-      #DoL { transform:rotate(-30deg); }
+      #DoL { transform:rotate(-40deg); }
+      #DrK { transform:rotate(-25deg); }
+      #BaAs { transform:rotate(-10deg); }
+      #Ba { transform:rotate( 5deg); }
+      #ApoI { transform:rotate( 20deg); }
+      #down { margin-bottom: -400; }
       #right {text-align: right}
       th { font-weight:normal; }
       th,td { font-size:80%; font-family: 'MedievalSharp', cursive; }
     </style>
   </head>
 <body>
-<div id="down'>
   <!--any way we can simplify these card tables?-->
-  <div class="card" id="DoL" style= "top:10px; left:10px;"> <!-- Disciple of Lin-->
+<div id="down">
+  <div class="card" id="DoL" style= "top:15px; left:5px;"> <!-- Disciple of Lin-->
     <div class="container">
       <table width="200" height="240" border="1" cellspacing="0">
         <tr>
@@ -40,9 +44,8 @@
       </table>
     </div>
   </div>
-
   
-   <div class="card" style= "top:10px; left:300px;"> <!-- Dragonkin Knight-->
+   <div class="card" id="DrK" style= "top:10px; left:60px;"> <!-- Dragonkin Knight-->
     <div class="container">
       <table width="200" height="240" border="1" cellspacing="0">
         <tr>
@@ -67,8 +70,92 @@
       </table>
     </div>
   </div>
- </div>
-    <p> Version 0.4.8.1 (Card Test 8)
+  
+  <div class="card" id="BaAs" style= "top:10px; left:110px;"> <!-- Bayport Assassin-->
+    <div class="container">
+      <table width="200" height="240" border="1" cellspacing="0">
+        <tr>
+          <th width="160" height="24" colspan="4"> Bayport Assassin </th>
+          <th width="40" height="24" colspan="1" style="color: cornflowerblue"> ⬤ </th>
+        </tr>
+        <tr> 
+          <td width="80" height="24" colspan="2"> Statistics </td>
+          <th class = "right" width="40" height="24" colspan="1"> 7 </th>
+          <th class = "right" width="40" height="24" colspan="1"> 1 </th>
+          <th class = "right" width="40" height="24" colspan="1"> 4 </th>
+        </tr>
+        <tr> 
+          <td width="200" height="120" colspan="5" valign="top"> Stealth </td>
+        </tr>
+        <tr> 
+          <th width="200" height="24" colspan="5">  </th>
+        </tr>
+        <tr> 
+          <th width="200" height="24" colspan="5"> Minion - Human Assassin </th>
+        </tr>
+      </table>
+    </div>
+  </div>
+
+
+  <div class="card" id="Ba" style= "top:15px; left:170px;"> <!-- Ballista-->
+    <div class="container">
+      <table width="200" height="240" border="1" cellspacing="0">
+        <tr>
+          <th width="160" height="24" colspan="4"> Ballista </th>
+          <th width="40" height="24" colspan="1" style="color: #c2bebe"> ⬤ </th>
+        </tr>
+        <tr> 
+          <td width="80" height="24" colspan="2"> Statistics </td>
+          <th class = "right" width="40" height="24" colspan="1"> 2 </th>
+          <th class = "right" width="40" height="24" colspan="1"> 6 </th>
+          <th class = "right" width="40" height="24" colspan="1"> 6 </th>
+        </tr>
+        <tr> 
+          <td width="200" height="120" colspan="5" valign="top"> Dualstrike, Ranged </td>
+        </tr>
+        <tr> 
+          <th width="200" height="24" colspan="5">  </th>
+        </tr>
+        <tr> 
+          <th width="200" height="24" colspan="5"> Minion - Construct </th>
+        </tr>
+      </table>
+    </div>
+  </div>
+
+
+  <div class="card" id="ApoI" style= "top:10px; left:220px;"> <!-- Apprentice of Imerta-->
+  <div class="card" id="ApoI" style= "top:30px; left:220px;"> <!-- Apprentice of Imerta-->
+    <div class="container">
+      <table width="200" height="240" border="1" cellspacing="0">
+        <tr>
+          <th width="160" height="24" colspan="4"> Apprentice of Imerta </th>
+          <th width="40" height="24" colspan="1" style="color: #c2bebe"> ⬤ </th>
+        </tr>
+        <tr> 
+          <td width="80" height="24" colspan="2"> Statistics </td>
+          <th class = "right" width="40" height="24" colspan="1"> 3 </th>
+          <th class = "right" width="40" height="24" colspan="1"> 4 </th>
+          <th class = "right" width="40" height="24" colspan="1"> 4 </th>
+        </tr>
+        <tr> 
+          <td width="200" height="120" colspan="5" valign="top"> Divine Shield, Flurry </td>
+        </tr>
+        <tr> 
+          <th width="200" height="24" colspan="5">  </th>
+        </tr>
+        <tr> 
+          <th width="200" height="24" colspan="5"> Minion - Human Paladin </th>
+        </tr>
+      </table>
+    </div>
+  </div>
+</div>
+
+
+
+    <p> Version 0.4.12 (Card Test 12)
   </p>
 </body>
 </html>
