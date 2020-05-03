@@ -9,8 +9,16 @@
       #DrK { transform:rotate(-25deg); }
       #BaAs { transform:rotate(-10deg); }
       #Ba { transform:rotate( 5deg); }
-      #ApoI { transform:rotate( 20deg); }
-      #ApoI:hover {margin-left: 400px; transform: rotate(-20deg); width: 2000px; height: 2500px;}
+      #ApoI { transform:rotate( 20deg);   position: absolute;
+  z-index: 9;
+  background-color: #f1f1f1;
+  border: 1px solid #d3d3d3;
+  text-align: center;}
+      #ApoI:hover {margin-left: 400px; transform: rotate(-20deg); width: 200px; height: 250px; padding: 10px;
+  cursor: move;
+  z-index: 10;
+  background-color: #2196F3;
+  color: #fff;}
       #right {text-align: right}
       th { font-weight:normal; }
       th,td { font-size:80%; font-family: 'MedievalSharp', cursive; }
