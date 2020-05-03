@@ -13,6 +13,72 @@
       #right {text-align: right}
       th { font-weight:normal; }
       th,td { font-size:80%; font-family: 'MedievalSharp', cursive; }
+      img {
+	margin-top:50px;
+	margin-left: 455px;
+}
+
+h3 {
+	margin-left: 755px;
+	color: #808080;
+}
+
+p {
+	margin-left: 755px;
+	color: #808080;
+}
+
+ul {
+	margin-left: 755px;
+	font-size: 17px;
+	color: #808080;
+}
+
+#Reload {
+	margin-left: 755px;
+	background: #1e71f7;
+	border: solid 1px #c2c0ba;
+	border-radius: 5px;
+	color: #fff;
+	padding-top: 7px;
+	padding-left: 10px;
+	padding-bottom: 7px;
+	padding-right: 10px;
+	font: Lucida Console, Serif, Helvetica;
+	font-size: 15px;
+}
+
+#Details {
+	margin-left: 305px;
+	border-radius: 5px;
+	border: solid 1px #ebebe0;
+	color: #808080;
+	padding-top: 7px;
+	padding-left: 10px;
+	padding-bottom: 7px;
+	padding-right: 10px;
+	font: Lucida Console, Serif, Helvetica;
+	font-size: 15px;
+	background: #fff;
+}
+
+a {
+	text-decoration: none;
+	color: #52b2bf;	
+}
+
+button {
+	width: 75px;
+	height: 35px;
+}
+h2 {
+	margin-left: 755px;
+}
+
+#underscore {
+	text-transform: uppercase;
+	font-size: 12px;
+}
     </style>
   </head>
 <body>
@@ -145,7 +211,25 @@
     </div>
   </div>
 
+<div id="container">
+	<h2>This site can't be reached</h2>
+		<h3 id="connection">The connection was reset</h3>
 
+		<h3 id="Try">Try:</h3>
+
+		<ul>
+			<li>Checking the connection</li>
+			<li><a href="">Checking the proxy and the firewall</a></li>
+			<li><a href="">Running Windows Network Diagnostics</a></li>
+		</ul>
+
+		<p id="underscore">Err_connection_reset</p>
+		<br>
+		<br>
+
+			<button id="Reload">Reload</button>
+			<button id="Details">Details</button>
+</div>
 
     <p> Version 0.4.14.1 (Card Test 14)
   </p>
