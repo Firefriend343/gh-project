@@ -152,12 +152,17 @@
   <div id="viewcontainer">  </div>
   
   <script>
+    import turtle
+    
     function view(el) { 
       console.log(el);
       var container = document.getElementById("viewcontainer");
       while (container.firstChild) { container.removeChild(container.firstChild); }
       var newCard = el.cloneNode(true);
       container.appendChild(newCard);
+      
+     wn = turtl.Turtle()
+     wn.bgcolor("black")
     }
   </script>
 
