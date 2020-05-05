@@ -2,25 +2,25 @@
   <head>
     <link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet">
     <title> Shadowdale Beta 0.4.18 </title>
-    <!--bigger font, get rid of blue border, move upward, use for all cards, not just ApoI-->
+    <!--bigger font,  use for all cards, not just ApoI-->
     <style>
-      .card { background:#efefef; box-shadow: 0 0px 12.5px 0 rgba(0,0,0,0.4); position:absolute; transition: 0.3s; border-radius: 17.5px; width: 200px; height: 240px;  border: solid lightgray 6.6px;} 
+      .card { font-size:80%; background:#efefef; box-shadow: 0 0px 12.5px 0 rgba(0,0,0,0.4); position:absolute; transition: 0.3s; border-radius: 17.5px; width: 200px; height: 240px;  border: solid lightgray 6.6px;} 
       .card img { border-radius: 5px 5px 0 0;}
-      #DoL { transform:rotate(-40deg); }
-      #DrK { transform:rotate(-25deg); }
-      #BaAs { transform:rotate(-10deg); }
-      #Ba { transform:rotate(5deg); }
-      #ApoI { transform:rotate(25deg); top:480px; left:270px;}
+      #DoL { transform:rotate(-40deg); top:455px; left:55px; }
+      #DrK { transform:rotate(-25deg); top:450px; left:110px; }
+      #BaAs { transform:rotate(-10deg); top:450px; left:160px; }
+      #Ba { transform:rotate(5deg); top:455px; left:220px; }
+      #ApoI { transform:rotate(25deg); top:480px; left:270px; }
       #right {text-align: right}
       th { font-weight:normal; }
-      th,td { font-size:80%; font-family: 'MedievalSharp', cursive; }
+      th,td {  font-family: 'MedievalSharp', cursive; }
       #viewcontainer {  position: absolute; top:410px; left:850px; width:320px; height:380px; }
-      #viewcontainer .card { position:absolute; transform: rotate(0deg); top:0px; left:0px; width: 300px; height: 360px;}  
+      #viewcontainer .card { position:absolute; font-size:110%; transform: rotate(0deg); top:0px; left:0px; width: 300px; height: 360px;}  
     </style>
   </head>
 <body>
   <!--any way we can simplify these card tables?-->
-  <div class="card" id="DoL" style= "top:455px; left:55px;"> <!-- Disciple of Lin-->
+  <div class="card" id="DoL" onmouseenter="view(this)"> <!-- Disciple of Lin-->
     <div class="container">
       <table width="200" height="240" border="1" cellspacing="0">
         <tr>
@@ -46,7 +46,7 @@
     </div>
   </div>
   
-   <div class="card" id="DrK" style= "top:450px; left:110px;"> <!-- Dragonkin Knight-->
+   <div class="card" id="DrK" onmouseenter="view(this)"> <!-- Dragonkin Knight-->
     <div class="container">
       <table width="200" height="240" border="1" cellspacing="0">
         <tr>
@@ -72,7 +72,7 @@
     </div>
   </div>
   
-  <div class="card" id="BaAs" style= "top:450px; left:160px;"> <!-- Bayport Assassin-->
+  <div class="card" id="BaAs" onmouseenter="view(this)"> <!-- Bayport Assassin-->
     <div class="container">
       <table width="200" height="240" border="1" cellspacing="0">
         <tr>
@@ -99,7 +99,7 @@
   </div>
 
 
-  <div class="card" id="Ba" style= "top:455px; left:220px;"> <!-- Ballista-->
+  <div class="card" id="Ba" onmouseenter="view(this)"> <!-- Ballista-->
     <div class="container">
       <table width="200" height="240" border="1" cellspacing="0">
         <tr>
@@ -126,7 +126,7 @@
   </div>
 
 
-  <div class="card" id="ApoI" onmouseenter="view(this)" > <!-- Apprentice of Imerta-->
+  <div class="card" id="ApoI" onmouseenter="view(this)"> <!-- Apprentice of Imerta-->
     <div class="container">
       <table width="100%" height="100%" border="1" cellspacing="0">
         <tr>
@@ -165,7 +165,7 @@
       
     }
   </script>
-    <p> Version 0.4.18 (Card Test 18)
+    <p> Version 0.4.19 (Card Test 19)
   </p>
 </body>
 </html>
