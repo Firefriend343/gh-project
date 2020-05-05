@@ -1,16 +1,16 @@
 <html>
   <head>
     <link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet">
-    <title> Shadowdale Beta 0.4.22 </title>
+    <title> Shadowdale Beta 0.4.23 </title>
     <!--bigger font,  use for all cards, not just ApoI-->
     <style>
-      .card {background:#efefef; box-shadow: 0 0px 12.5px 0 rgba(0,0,0,0.4); position:absolute; transition: 0.3s; border-radius: 17.5px; border: solid lightgray 6.6px;} 
+      .card {background:#efefef; box-shadow: 0 0px 12.5px 0 rgba(0,0,0,0.4); position:absolute; transition: 0.3s; border-radius: 17.5px; width: 200px; height: 240px; border: solid lightgray 6.6px;} 
       .card img { border-radius: 5px 5px 0 0;}
-      #DoL { transform:rotate(-40deg); top:455px; left:55px; width: 200px; height: 240px; }
-      #DrK { transform:rotate(-25deg); top:450px; left:110px; width: 200px; height: 240px; }
-      #BaAs { transform:rotate(-10deg); top:450px; left:160px; width: 200px; height: 240px; }
-      #Ba { transform:rotate(5deg); top:455px; left:220px; width: 200px; height: 240px; }
-      #ApoI { transform:rotate(25deg); top:480px; left:270px; width: 200px; height: 240px; }
+      #DoL { transform:rotate(-40deg); top:455px; left:55px; }
+      #DrK { transform:rotate(-25deg); top:450px; left:110px; }
+      #BaAs { transform:rotate(-10deg); top:450px; left:160px; }
+      #Ba { transform:rotate(5deg); top:455px; left:220px; }
+      #ApoI { transform:rotate(25deg); top:480px; left:270px; }
       #right {text-align: right}
       th { font-weight:normal; }
       th,td {  font-family: 'MedievalSharp', cursive; font-size:80%; }
@@ -22,7 +22,7 @@
   <!--any way we can simplify these card tables?-->
   <div class="card" id="DoL" onmouseenter="view(this)"> <!-- Disciple of Lin-->
     <div class="container">
-      <table width="200" height="240" border="1" cellspacing="0">
+      <table width="100%" height="100%" border="1" cellspacing="0">
         <tr>
           <th width="160" height="24" colspan="4"> Disciple of Lin </th>
           <th width="40" height="24" colspan="1" style="color:cornflowerblue"> ⬤ </th>
@@ -48,7 +48,7 @@
   
    <div class="card" id="DrK" onmouseenter="view(this)"> <!-- Dragonkin Knight-->
     <div class="container">
-      <table width="200" height="240" border="1" cellspacing="0">
+      <table width="100%" height="100%" border="1" cellspacing="0">
         <tr>
           <th width="160" height="24" colspan="4"> Dragonkin Knight </th>
           <th width="40" height="24" colspan="1" style="color: red"> ⬤ </th>
@@ -74,7 +74,7 @@
   
   <div class="card" id="BaAs" onmouseenter="view(this)"> <!-- Bayport Assassin-->
     <div class="container">
-      <table width="200" height="240" border="1" cellspacing="0">
+      <table width="100%" height="100%" border="1" cellspacing="0">
         <tr>
           <th width="160" height="24" colspan="4"> Bayport Assassin </th>
           <th width="40" height="24" colspan="1" style="color: cornflowerblue"> ⬤ </th>
@@ -101,7 +101,7 @@
 
   <div class="card" id="Ba" onmouseenter="view(this)"> <!-- Ballista-->
     <div class="container">
-      <table width="200" height="240" border="1" cellspacing="0">
+      <table width="100%" height="100%" border="1" cellspacing="0">
         <tr>
           <th width="160" height="24" colspan="4"> Ballista </th>
           <th width="40" height="24" colspan="1" style="color: #c2bebe"> ⬤ </th>
@@ -165,7 +165,7 @@
       
     }
   </script>
-    <p> Version 0.4.22 (Card Test 22)
+    <p> Version 0.4.23 (Card Test 23)
   </p>
 </body>
 </html>
