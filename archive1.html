@@ -1,0 +1,170 @@
+<html>
+  <head>
+    <link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet">
+    <title> Shadowdale Beta 0.4.24 (ARCHIVED)</title>
+    <!--bigger font,  use for all cards, not just ApoI-->
+    <!---padding: 0.1em;(used in th,td)--->
+
+    <style>
+      .card {background:#efefef; box-shadow: 0 0px 12.5px 0 rgba(0,0,0,0.4); position:absolute; transition: 0.3s; border-radius: 17.5px; width: 200px; height: 240px; border: solid lightgray 6.6px;} 
+      .card img { border-radius: 5px 5px 0 0;}
+      #DoL { transform:rotate(-40deg); top:455px; left:55px; }
+      #DrK { transform:rotate(-25deg); top:450px; left:110px; }
+      #BaAs { transform:rotate(-10deg); top:450px; left:160px; }
+      #Ba { transform:rotate(5deg); top:455px; left:220px; }
+      #ApoI { transform:rotate(25deg); top:480px; left:270px; }
+      #right {text-align: right}
+      th { font-weight:normal; }
+      th,td {  font-family: 'MedievalSharp', cursive; font-size:80%; }       
+      #viewcontainer { position: absolute; top:410px; left:850px; width:320px; height:380px; }
+      #viewcontainer .card { position:absolute; transform: rotate(0deg); top:0px; left:0px; width: 300px; height: 360px; }  
+      #viewcontainer .card th { font-size: 100%; }
+      #viewcontainer .card td { font-size: 100%; }
+    </style>
+  </head>
+<body>
+  <!--any way we can simplify these card tables?-->
+  <div class="card" id="DoL" onmouseenter="view(this)"> <!-- Disciple of Lin-->
+    <div class="container">
+      <table width="100%" height="100%" border="1" cellspacing="0">
+        <tr>
+          <th width="160" height="24" colspan="4"> Disciple of Lin </th>
+          <th width="40" height="24" colspan="1" style="color:cornflowerblue"> ⬤ </th>
+        </tr>
+        <tr> 
+          <td width="80" height="24" colspan="2"> Statistics </td>
+          <th class = "right" width="40" height="24" colspan="1"> 3 </th>
+          <th class = "right" width="40" height="24" colspan="1"> 4 </th>
+          <th class = "right" width="40" height="24" colspan="1"> 3 </th>
+        </tr>
+        <tr> 
+          <td width="200" height="120" colspan="5" valign="top"> Flurry </td>
+        </tr>
+        <tr> 
+          <th width="200" height="24" colspan="5">  </th>
+        </tr>
+        <tr> 
+          <th width="200" height="24" colspan="5"> Minion - Human </th>
+        </tr>
+      </table>
+    </div>
+  </div>
+  
+   <div class="card" id="DrK" onmouseenter="view(this)"> <!-- Dragonkin Knight-->
+    <div class="container">
+      <table width="100%" height="100%" border="1" cellspacing="0">
+        <tr>
+          <th width="160" height="24" colspan="4"> Dragonkin Knight </th>
+          <th width="40" height="24" colspan="1" style="color: red"> ⬤ </th>
+        </tr>
+        <tr> 
+          <td width="80" height="24" colspan="2"> Statistics </td>
+          <th class = "right" width="40" height="24" colspan="1"> 4 </th>
+          <th class = "right" width="40" height="24" colspan="1"> 4 </th>
+          <th class = "right" width="40" height="24" colspan="1"> 4 </th>
+        </tr>
+        <tr> 
+          <td width="200" height="120" colspan="5" valign="top"> If you have 12 or more Biomes, draw 2 more. </td>
+        </tr>
+        <tr> 
+          <th width="200" height="24" colspan="5">  </th>
+        </tr>
+        <tr> 
+          <th width="200" height="24" colspan="5"> Minion - Dragonborn Warrior </th>
+        </tr>
+      </table>
+    </div>
+  </div>
+  
+  <div class="card" id="BaAs" onmouseenter="view(this)"> <!-- Bayport Assassin-->
+    <div class="container">
+      <table width="100%" height="100%" border="1" cellspacing="0">
+        <tr>
+          <th width="160" height="24" colspan="4"> Bayport Assassin </th>
+          <th width="40" height="24" colspan="1" style="color: cornflowerblue"> ⬤ </th>
+        </tr>
+        <tr> 
+          <td width="80" height="24" colspan="2"> Statistics </td>
+          <th class = "right" width="40" height="24" colspan="1"> 7 </th>
+          <th class = "right" width="40" height="24" colspan="1"> 1 </th>
+          <th class = "right" width="40" height="24" colspan="1"> 4 </th>
+        </tr>
+        <tr> 
+          <td width="200" height="120" colspan="5" valign="top"> Stealth </td>
+        </tr>
+        <tr> 
+          <th width="200" height="24" colspan="5">  </th>
+        </tr>
+        <tr> 
+          <th width="200" height="24" colspan="5"> Minion - Human Assassin </th>
+        </tr>
+      </table>
+    </div>
+  </div>
+  <div class="card" id="Ba" onmouseenter="view(this)"> <!-- Ballista-->
+    <div class="container">
+      <table width="100%" height="100%" border="1" cellspacing="0">
+        <tr>
+          <th width="160" height="24" colspan="4"> Ballista </th>
+          <th width="40" height="24" colspan="1" style="color: #c2bebe"> ⬤ </th>
+        </tr>
+        <tr> 
+          <td width="80" height="24" colspan="2"> Statistics </td>
+          <th class = "right" width="40" height="24" colspan="1"> 2 </th>
+          <th class = "right" width="40" height="24" colspan="1"> 6 </th>
+          <th class = "right" width="40" height="24" colspan="1"> 6 </th>
+        </tr>
+        <tr> 
+          <td width="200" height="120" colspan="5" valign="top"> Dualstrike, Ranged </td>
+        </tr>
+        <tr> 
+          <th width="200" height="24" colspan="5">  </th>
+        </tr>
+        <tr> 
+          <th width="200" height="24" colspan="5"> Minion - Construct </th>
+        </tr>
+      </table>
+    </div>
+  </div>
+  <div class="card" id="ApoI" onmouseenter="view(this)"> <!-- Apprentice of Imerta-->
+    <div class="container">
+      <table width="100%" height="100%" border="1" cellspacing="0">
+        <tr>
+          <th width="160" height="24" colspan="4"> Apprentice of Imerta </th>
+          <th width="40" height="24" colspan="1" style="color: cornflowerblue"> ⬤ </th>
+        </tr>
+        <tr> 
+          <td width="80" height="24" colspan="2"> Statistics </td>
+          <th class = "right" width="40" height="24" colspan="1"> 3 </th>
+          <th class = "right" width="40" height="24" colspan="1"> 4 </th>
+          <th class = "right" width="40" height="24" colspan="1"> 4 </th>
+        </tr>
+        <tr> 
+          <td width="200" height="120" colspan="5" valign="top"> Divine Shield, Flurry </td>
+        </tr>
+        <tr> 
+          <th width="200" height="24" colspan="5">  </th>
+        </tr>
+        <tr> 
+          <th width="200" height="24" colspan="5"> Minion - Human Paladin </th>
+        </tr>
+      </table>
+    </div>
+  </div>
+  
+  <div id="viewcontainer">  </div>
+  
+  <script>
+    function view(el) { 
+      console.log(el);
+      var container = document.getElementById("viewcontainer");
+      while (container.firstChild) { container.removeChild(container.firstChild); }
+      var newCard = el.cloneNode(true);
+      container.appendChild(newCard);
+
+    }
+  </script>
+    <p> Version 0.4.24.4 (Card Test 24 (ARCHIVED))
+  </p>
+</body>
+</html>
