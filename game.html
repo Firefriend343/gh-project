@@ -1,11 +1,14 @@
 
 <html>
 <head>
+  <link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet">
  <title> Shadowdale </title>
  <style>
  .card {
    width: 200px;
    height: 240px;
+   font-family: 'MedievalSharp', cursive; 
+   font-size:80%;
    border: 5px solid gray;
    box-shadow: 4px 4px #efefef;
    border-radius: 6px;
@@ -28,6 +31,7 @@
   }
   .cell { background: #efefef; padding: 3px; position: relative;}
   .name { grid-area: name; text-align: center; }
+  .name p { white-space: nowrap; }
   .color { grid-area: color; text-align: center; }
   .stats { grid-area: stats; }
   .attack { grid-area: attack; text-align: right; }
@@ -36,6 +40,7 @@
   .desc { grid-area: desc; }
   .blank { grid-area: blank; }
   .type { grid-area: type; text-align: center; }
+  .type p { white-space: nowrap; }
   .center p { margin: 0; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); }
   .short p { margin: 0; position: absolute; top: 50%; left: 3px; transform: translate(0%, -50%); }
   .long p { margin: 0; }
@@ -48,7 +53,7 @@
 
 
 <div class="card">
- <div class="cell name short"><p>Name</p></div>
+ <div class="cell name center"><p>Name</p></div>
  <div class="cell color center red"><p>&#x2B24;</p></div>
  <div class="cell stats short"><p>Statistics</p></div>
  <div class="cell attack center"><p>1</p></div>
@@ -56,12 +61,12 @@
  <div class="cell cost center"><p>3</p></div>
  <div class="cell desc long"><p>This is where the description goes</p></div>
  <div class="cell blank"></div>
- <div class="cell type short"><p>Monstrosity</p></div>
+ <div class="cell type center"><p>Monstrosity</p></div>
 </div>
 
 
 <div class="card">
- <div class="cell name short"><p>Name</p></div>
+ <div class="cell name center"><p>Name</p></div>
  <div class="cell color center blue"><p>&#x2B24;</p></div>
  <div class="cell stats short"><p>Statistics</p></div>
  <div class="cell attack center"><p>1</p></div>
@@ -69,7 +74,7 @@
  <div class="cell cost center"><p>3</p></div>
  <div class="cell desc long"><p>This is where the description goes</p></div>
  <div class="cell blank"></div>
- <div class="cell type short"><p>Monstrosity</p></div>
+ <div class="cell type center"><p>Monstrosity</p></div>
 </div>
 
 <div class="card">
@@ -84,7 +89,7 @@
  <div class="cell type center"><p>Minion - Human Paladin</p></div>
 </div>
 
-<p> Version 0.1.1.6 (Now REALLY Successfuly Dan-proofed) </p>
+<p> Version 0.1.2 </p>
   
 </body>
 </html>
