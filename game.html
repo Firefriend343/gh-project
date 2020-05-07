@@ -100,30 +100,6 @@
  <div class="cell type center"><p> Minion - Human Paladin </p></div>
 </div>
 
-<p> Version 0.1.4.1 ***** Notes: None </p>
-  
-//**************************************************
-// Function: AGameVehicle::Debug_GetFrameCount
-//
-//! A very hacky method to get the current frame count; the variable is protected.
-//!
-//! \return The current frame number.
-//**************************************************
-UINT AGameVehicle::Debug_GetFrameCount()
-{
-BYTE* pEngineLoop = (BYTE*)(&GEngineLoop);
-pEngineLoop += sizeof( Array<FLOAT> ) + sizeof(
-DOUBLE );
-INT iFrameCount = *((INT*)pEngineLoop);
-return iFrameCount;
-}
-  <script>
-    document.getElementById("paAp").onclick = function() { notice(); };
-    function notice() {
-    window.alert("You Suck");
-    document.getElementById("paAp").cloneNode();
-    }
-    
-  </script>
+<p> Version 0.1.4.2 ***** Notes: Aryan-proofed </p>
 </body>
 </html>
