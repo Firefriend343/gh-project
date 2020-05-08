@@ -10,6 +10,8 @@
   #PaAp { transform:rotate(-10deg); top:450px; left:165px; }
   #ThKn { transform:rotate(5deg); top:455px; left:225px; }
   #XaSn { transform:rotate(25deg); top:480px; left:275px; }
+  #viewcontainer { position: absolute; top:410px; left:850px; width:320px; height:380px; }
+  #viewcontainer .card { position:absolute; transform: rotate(0deg); top:0px; left:0px; width: 300px; height: 360px; } 
    
   .card { 
    position:absolute;
@@ -120,7 +122,7 @@
  <div class="cell type center"><p> Minion - Thornling Knight </p></div>
 </div>
   
-  <div class="card" id="XaSn"> <!--Xanaris Sniper--->
+  <div class="card" id="XaSn" onmouseenter="view(this)"> <!--Xanaris Sniper--->
  <div class="cell name center"><p> Xanaris Sniper </p></div>
  <div class="cell color center white"><p> ⬤ </p></div>
  <div class="cell stats short"><p>Statistics</p></div>
@@ -131,7 +133,20 @@
  <div class="cell blank"></div>
  <div class="cell type center"><p> Minion - Xanaris Warrior </p></div>
 </div>
+  
+<div id="viewcontainer">  </div>
+  
+  <script>
+    function view(el) { 
+      console.log(el);
+      var container = document.getElementById("viewcontainer");
+      while (container.firstChild) { container.removeChild(container.firstChild); }
+      var newCard = el.cloneNode(true);
+      container.appendChild(newCard);
 
-<p> Version 0.1.4.7 ***** Notes: Aryan-proofed, last contributer Henry (again) </p>
+    }
+  </script>
+
+<p> Version 0.1.4.8 ***** Notes: Aryan-proofed, last contributer Henry (again,again) </p>
 </body>
 </html>
