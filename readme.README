@@ -73,7 +73,7 @@ Electro Cannon
 Statistics	2	6	6
 Charge, Ranged
 Minion - Construct
-Aromory	
+Armory	
 Statistics	-	-	4
  Give a minion +1 Health.
 Biome
@@ -81,10 +81,10 @@ Stoneborn Sage
 Statistics	1	4	7
 Draw cards until you have the same amount of cards as Biomes.
 Minion - Elemental Sage
-Gift Monk	
+Gith Monk	
 Statistics	4	5	6
 Gain either Flurry or Shield or Divine Shield.
-Minion - Gift Monk
+Minion - Gith Monk
 Forsaken Warlock	
 Statistics	4	5	5
 Restore 3 health to yourself.
