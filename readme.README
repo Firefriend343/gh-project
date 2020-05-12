@@ -1,1 +1,93 @@
 Thorn Knight : 1 Green; 5/5/6; "Shield. Has Flurry if you have another Green minion."; Minion - Thornling Knight
+
+Bayport Assasin	
+Statistics	7	1	4
+Stealth
+Minion - Human Assasin
+Ballista	
+Statistics	2	6	6
+Dualstrike, Ranged
+Minion - Construct
+Soldier's Quarters	
+Statistics	-	-	2
+Biome
+Lightning Soldier	
+Statistics	5	5	5
+Flurry
+Minion - Human Soldier
+Apprentice of Imerta	
+Statistics	3	4	4
+Divine Shield, Flurry
+Minion - Human Paladin
+Detect Thoughts	
+Statistics	-	-	4
+Forsee 1 for every player's deck.
+Spell - Divination
+Thorncaller	
+Statistics	6	5	6
+Draw 2 Thornlings from your deck.
+Minion - Thornling Druid
+
+Xanaris Guardian	
+Statistics	5	7	8
+Ranged.
+ Give a minion +1/+1
+ Deal two damage to all characters of one person.
+ Flash. Counter a spell.
+Minion - Eladrin Archmage
+Fatsu	
+Statistics	4	4	4
+Shield
+Minion - Human Rogue
+Soldier's Quarters	
+Statistics	-	-	2
+Biome
+Possession	
+Statistics	-	-	4
+Take control of an enemy
+minion.
+Spell - Evocation
+Electro Soldier	
+Statistics	4	3	4
+ Do 1 damage to an enemy.
+Shock troops. Literally.
+Minion - Eladrin Mercenary
+Dragon Rider	
+Statistics	6	4	5
+Aerial, Flurry
+Minion - Dragon Rider
+Fire Golem	
+Statistics	2	6	5
+Flameshield, Shield
+Minion - Construct
+
+Thunder Paladin	
+Statistics	4	6	7
+Flurry.  Deal 2 damage to an enemy hero.
+Minion - Human Paladin
+Thunderstrike	
+Statistics	-	-	4
+Do 4 damage to an enemy.
+Spells - Evocation
+Electro Cannon	
+Statistics	2	6	6
+Charge, Ranged
+Minion - Construct
+Aromory	
+Statistics	-	-	4
+ Give a minion +1 Health.
+Biome
+Stoneborn Sage	
+Statistics	1	4	7
+Draw cards until you have the same amount of cards as Biomes.
+Minion - Elemental Sage
+Gift Monk	
+Statistics	4	5	6
+Gain either Flurry or Shield or Divine Shield.
+Minion - Gift Monk
+Forsaken Warlock	
+Statistics	4	5	5
+Restore 3 health to yourself.
+
+ Draw a Biome.
+Minion - Warlock
