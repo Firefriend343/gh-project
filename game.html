@@ -8,9 +8,13 @@
   #Ax { transform:rotate(-40deg); top:455px; left:55px; }
   #Ax-M { top:155px; left: 55px }
   #DoL { transform:rotate(-25deg); top:450px; left:110px; }
+  #DoL-M { top:155px; left: 355px }
   #PaAp { transform:rotate(-10deg); top:450px; left:165px; }
+  #PaAp-M { top:155px; left: 655px }
   #ThKn { transform:rotate(5deg); top:455px; left:225px; }
+  #ThKn-M { top:155px; left: 955px }
   #XaSn { transform:rotate(25deg); top:480px; left:275px; }
+  #XaSn-M { top:155px; left: 1255px }
   #viewcontainer { position: absolute; top:410px; left:850px; width:320px; height:380px; }
   #viewcontainer .card { position:absolute; font-size:110%; transform: rotate(0deg); top:0px; left:0px; width: 300px; height: auto; } 
    
@@ -124,8 +128,16 @@
  <div class="cell cost center">  <p> 3 </p></div>
  <div class="cell desc long"><p> Flurry </p></div>
  <div class="cell blank"></div>
- <div class="cell type center"><p> Minion - nOOb </p></div>
+ <div class="cell type center"><p> Minion </p></div>
 </div>
+  
+<div class="minion" id="DoL-M"> <!--Disciple of Lin--->
+ <div class="cell name center"><p> Disciple of Lin </p></div>
+ <div class="cell attack center"><p> 3 </p></div>
+ <div class="cell health center"><p> 4 </p></div>
+ <div class="cell color center blue"><p> ⬤ </p></div>
+</div>
+
   
 <div class="card" id="PaAp" onmouseenter="view(this)"> <!--Paladin Apprentice--->
  <div class="cell name center"><p> Paladin Apprentice </p></div>
@@ -139,6 +151,14 @@
  <div class="cell type center"><p> Minion - Human Paladin </p></div>
 </div>
   
+<div class="minion" id="PaAp-M"> <!--Paladin Apprentice--->
+ <div class="cell name center"><p> Paladin Apprentice </p></div>
+ <div class="cell attack center"><p> 4 </p></div>
+ <div class="cell health center"><p> 6 </p></div>
+ <div class="cell color center yellow"><p> ⬤ </p></div>
+</div>
+
+  
   <div class="card" id="ThKn" onmouseenter="view(this)"> <!--Thorn Knight--->
  <div class="cell name center"><p> Thorn Knight </p></div>
  <div class="cell color center green"><p> ⬤ </p></div>
@@ -151,6 +171,14 @@
  <div class="cell type center"><p> Minion - Thornling Knight </p></div>
 </div>
   
+<div class="minion" id="ThKn-M"> <!--Thorn Knight--->
+ <div class="cell name center"><p> Thorn Knight </p></div>
+ <div class="cell attack center"><p> 5 </p></div>
+ <div class="cell health center"><p> 5 </p></div>
+ <div class="cell color center green"><p> ⬤ </p></div>
+</div>
+
+  
   <div class="card" id="XaSn" onmouseenter="view(this)"> <!--Xanaris Sniper--->
  <div class="cell name center"><p> Xanaris Sniper </p></div>
  <div class="cell color center white"><p> ⬤ </p></div>
@@ -162,6 +190,14 @@
  <div class="cell blank"></div>
  <div class="cell type center"><p> Minion - Xanaris Warrior </p></div>
 </div>
+  
+<div class="minion" id="XaSn-M"> <!--Xanaris Sniper--->
+ <div class="cell name center"><p> Xanaris Sniper </p></div>
+ <div class="cell attack center"><p> 3 </p></div>
+ <div class="cell health center"><p> 2 </p></div>
+ <div class="cell color center white"><p> ⬤ </p></div>
+</div>
+
   
 <div id="viewcontainer">
   </div>
@@ -177,6 +213,6 @@
     }
   </script>
 
-<p> Version 0.1.5.4 ***** Notes: Last contributer Henry </p>
+<p> Version 0.1.5.6 ***** Notes: Last contributer Henry </p>
 </body>
 </html>
