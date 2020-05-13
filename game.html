@@ -12,8 +12,8 @@
   #XaSn { transform:rotate(25deg); top:480px; left:275px; }
   #viewcontainer { position: absolute; top:410px; left:850px; width:320px; height:380px; }
   #viewcontainer .card { position:absolute; font-size:110%; transform: rotate(0deg); top:0px; left:0px; width: 300px; height: auto; } 
-  #minioncontainer { position: absolute; top:50px; left:150px; width:220px; height:240px; }
-  #minioncontainer .card { position:absolute; font-size:80%; transform: rotate(0deg); top:0px; left:0px; width: 200px; height: 240px; } 
+  #minioncontainer { position: absolute; top:50px; left:150px; width:200px; height:240px; }
+  #minioncontainer .card { position:absolute; font-size:80%; transform: rotate(0deg); top:0px; left:0px; width: 200px; height: auto; } 
    
   .card { 
    position:absolute;
@@ -41,27 +41,7 @@
    gap: 2px;
    background: gray;
   }
-   
- .minion { 
-   position:absolute;
-   width: 210px;
-   height: auto;
-   font-family: 'MedievalSharp', cursive; 
-   font-size:100%;
-   border: 5px solid gray;
-   box-shadow: 4px 4px #efefef;
-   border-radius: 6px;
-   display: inline-grid;
-   margin: 15px;
-   grid-template-columns: repeat(3, 1fr);
-   grid-auto-rows: 2em 2em;
-   grid-template-areas:
-     "name   name   name"
-     "attack color  health";
-   gap: 2px;
-   background: gray;
-  }
-   
+     
   .cell { background: #efefef; padding: 3px; position: relative;}
   .name { grid-area: name; text-align: center; }
   .name p { white-space: nowrap; }
@@ -177,6 +157,6 @@
       container.appendChild(newCard);
     }
   </script>
-<p> Version 0.1.5.13 ***** Notes: Last contributer Henry </p>
+<p> Version 0.1.5.14 ***** Notes: Last contributer Henry </p>
 </body>
 </html>
