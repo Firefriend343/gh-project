@@ -47,7 +47,12 @@
     grid-auto-rows: 2em 2em;
     grid-template-areas:
     "name   name   name"
-    "attack color health"}
+    "attack color health"
+   }
+  #minioncontainer .card .stats { display:none; }
+  #minioncontainer .card .desc { display:none; }
+  #minioncontainer .card .blank { display:none; }
+  #minioncontainer .card .type { display:none; }
      
   .cell { background: #efefef; padding: 3px; position: relative;}
   .name { grid-area: name; text-align: center; }
@@ -164,6 +169,6 @@
       container.appendChild(newCard);
     }
   </script>
-<p> Version 0.1.5.17 ***** Notes: Last contributer Henry </p>
+<p> Version 0.1.5.18 ***** Notes: Last contributer Henry </p>
 </body>
 </html>
