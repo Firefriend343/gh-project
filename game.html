@@ -13,6 +13,7 @@
   #XaGu {transform:rotate(35deg); top: 505px; left: 325px;  }
   #viewcontainer { position: absolute; top:450px; left:980px; width:320px; height:380px; }
   #viewcontainer .card { position:absolute; font-size:110%; transform: rotate(0deg); top:0px; left:0px; width: 300px; height: auto; } 
+  
   .minioncontainer { position: absolute; width:200px; height:240px; }
   .minioncontainer .card { position:absolute; font-size:100%; transform: rotate(0deg); top:0px; left:0px; width: 200px; height: auto; } 
   .minioncontainer .card .stats { display:none; }
@@ -49,7 +50,7 @@
    background: gray;
   }
    
-  #minioncontainer .card { 
+  .minioncontainer .card { 
     grid-template-columns: repeat(3, 1fr);
     grid-auto-rows: 2em 2em;
     grid-template-areas:
@@ -179,11 +180,11 @@
     }
     function select(el) {
       console.log(el);
-      var container = document.getElementById("minioncontainer");
+      var container = document.getElementById("minioncontainer1");
       var newCard = el.cloneNode(true);
       container.appendChild(newCard);
     }
   </script>
-<p> Version 0.1.6.14 ***** Notes: Hand looks kind of unbalanced (currently fixing). Last contributer Henry. </p>
+<p> Version 0.1.6.15 ***** Notes: Hand looks kind of unbalanced (currently fixing). Last contributer Henry. </p>
 </body>
 </html>
