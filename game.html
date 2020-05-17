@@ -15,14 +15,14 @@
   #viewcontainer { position: absolute; top:450px; left:980px; width:320px; height:380px; }
   #viewcontainer .card { position:absolute; font-size:110%; transform: rotate(0deg); top:0px; left:0px; width: 300px; height: auto; } 
   
-  .minioncontainer { position: absolute; width:200px; height:240px; }
-  .minioncontainer .card { position:absolute; font-size:100%; transform: rotate(0deg); top:0px; left:0px; width: 200px; height: auto; } 
+  .minioncontainer { height:240px; }
+  .minioncontainer .card { position:absolute; font-size:100%; transform: rotate(0deg); top:0px; left:0px; width: 160px; height: auto; } 
   .minioncontainer .card .stats { display:none; }
   .minioncontainer .card .desc { display:none; }
   .minioncontainer .card .cost { display:none; }
   .minioncontainer .card .blank { display:none; }
   .minioncontainer .card .type { display:none; }
-  #minioncontainer1 { position:absolute;  }  
+  #minioncontainer1 { position:relative;  }  
    
   .card { 
    position:absolute;
@@ -56,7 +56,8 @@
     grid-auto-rows: 2em 2em;
     grid-template-areas:
     "name   name   name"
-    "attack color health"
+    "attack color health";
+    position:relative;
    }
        
   .cell { background: #efefef; padding: 3px; position: relative;}
@@ -168,7 +169,7 @@
 <div id="viewcontainer"></div>
   
 
-<div class="minioncontainer" id="minioncontainer1" style="top:50px; left:30px"></div>
+<div class="minioncontainer" id="minioncontainer1" style="top:50px; left:30px;"></div>
 
   
   <script>
@@ -187,6 +188,6 @@
       container.appendChild(newCard);
     }
   </script>
-<p> Version 0.1.6.17 ***** Notes: Hand looks kind of unbalanced (currently fixing). Last contributer Henry. </p>
+<p> Version 0.1.6.18 ***** Notes: Hand looks kind of unbalanced (currently fixing). Last contributer Henry. </p>
 </body>
 </html>
