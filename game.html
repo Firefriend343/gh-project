@@ -92,7 +92,7 @@
        NOTICE: DO NOT SAY "Do Damage", INSTEAD "Deal Damage"
        NOTICE: ALWAYS UPDATE THE VERSION AND THE LAST COMITTER
 ---->
-<div class="card" id="Ax" onmouseenter="view(this)" onclick="select(this)"> <!--Axemaster--->
+<div class="card" id="Ax" onmouseenter="view(this)" onclick="play(this)"> <!--Axemaster--->
  <div class="cell name center"><p> Axemaster </p></div>
  <div class="cell color center colorless"><p> ⬤ </p></div>
  <div class="cell stats short"><p>Statistics</p></div>
@@ -104,7 +104,7 @@
  <div class="cell type center"><p> Minion - Paladin </p></div>
 </div>
   
-<div class="card" id="DoL" onmouseenter="view(this)" onclick="select(this)"> <!--Disciple Of Lin--->
+<div class="card" id="DoL" onmouseenter="view(this)" onclick="play(this)"> <!--Disciple Of Lin--->
  <div class="cell name center"><p> Disciple Of Lin </p></div>
  <div class="cell color center blue"><p> ⬤ </p></div>
  <div class="cell stats short"><p>Statistics</p></div>
@@ -116,7 +116,7 @@
  <div class="cell type center"><p> Minion </p></div>
 </div>
     
-<div class="card" id="PaAp" onmouseenter="view(this)" onclick="select(this)"> <!--Paladin Apprentice--->
+<div class="card" id="PaAp" onmouseenter="view(this)" onclick="play(this)"> <!--Paladin Apprentice--->
  <div class="cell name center"><p> Paladin Apprentice </p></div>
  <div class="cell color center yellow"><p> ⬤ </p></div>
  <div class="cell stats short"><p>Statistics</p></div>
@@ -128,7 +128,7 @@
  <div class="cell type center"><p> Minion - Human Paladin </p></div>
 </div>
     
-  <div class="card" id="ThKn" onmouseenter="view(this)" onclick="select(this)"> <!--Thorn Knight--->
+  <div class="card" id="ThKn" onmouseenter="view(this)" onclick="play(this)"> <!--Thorn Knight--->
  <div class="cell name center"><p> Thorn Knight </p></div>
  <div class="cell color center green"><p> ⬤ </p></div>
  <div class="cell stats short"><p>Statistics</p></div>
@@ -141,7 +141,7 @@
 </div>
  
   
-  <div class="card" id="XaSn" onmouseenter="view(this)" onclick="select(this)"> <!--Xanaris Sniper--->
+  <div class="card" id="XaSn" onmouseenter="view(this)" onclick="play(this)"> <!--Xanaris Sniper--->
  <div class="cell name center"><p> Xanaris Sniper </p></div>
  <div class="cell color center white"><p> ⬤ </p></div>
  <div class="cell stats short"><p>Statistics</p></div>
@@ -154,7 +154,7 @@
 </div>
   
   
-   <div class="card" id="XaGu" onmouseenter="view(this)" onclick="select(this)"> <!--Xanaris Guardian--->
+   <div class="card" id="XaGu" onmouseenter="view(this)" onclick="play(this)"> <!--Xanaris Guardian--->
  <div class="cell name center"><p> Xanaris Guard </p></div>
  <div class="cell color center green"><p> ⬤ </p></div>
  <div class="cell stats short"><p>Statistics</p></div>
@@ -180,7 +180,7 @@
       var newCard = el.cloneNode(true);
       container.appendChild(newCard);
     }
-    function select(el) {
+    function play(el) {
       console.log(el);
       var container = document.getElementById("minioncontainer1");
       if (container.childElementCount >= 7) {
@@ -191,6 +191,6 @@
       container.appendChild(newCard);
     }
   </script>
-<!---- Version 0.1.7.4 ***** Notes: Hand looks kind of unbalanced (currently fixing). Last contributer Henry. --->
+<!---- Version 0.1.7.6 ***** Notes: Hand looks kind of unbalanced (currently fixing). Last contributer Henry. --->
 </body>
 </html>
