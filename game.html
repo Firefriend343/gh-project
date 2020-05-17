@@ -184,7 +184,7 @@
       console.log(el);
       var container = document.getElementById("minioncontainer1");
       if (container.childElementCount >= 7) {
-        return;
+        return false;
       }
       var newCard = el.cloneNode(true);
       newCard.id = newCard.id + "-M";
