@@ -183,12 +183,12 @@
     function select(el) {
       console.log(el);
       var container = document.getElementById("minioncontainer1");
+      if (container.childElementCount >= 7) {
+        return;
+      }
       var newCard = el.cloneNode(true);
       newCard.id = newCard.id + "-M";
       container.appendChild(newCard);
-      if minioncontainer1.childElementCount = "7" {
-        delete Element("minioncontainer1");
-      }
     }
   </script>
 <!---- Version 0.1.7.4 ***** Notes: Hand looks kind of unbalanced (currently fixing). Last contributer Henry. --->
