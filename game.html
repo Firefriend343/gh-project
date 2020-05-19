@@ -6,8 +6,32 @@
  <title> Shadowdale </title>
  <style>
   
- .button { background-color: green; position:absolute; border: solid; color: black; padding: 15px 15px 15px 15px; border-radius: 50%; text-align: center; text-decoration: none; display: inline-block; font-size: 20px; font-family: 'MedievalSharp', cursive; }
- #button1 { width:80px; height:80px; top:440px; left: 700px;}
+ .button { 
+   position:absolute;
+   width: 80px;
+   height: 80px;
+   font-family: 'MedievalSharp', cursive; 
+   font-size:50%;
+   border: 1px solid gray;
+   box-shadow: 4px 4px;
+   border-radius: 50px;
+   display: inline-grid;
+   margin: 15px;
+   grid-template-columns: repeat(1, 1fr);
+   grid-auto-rows: 2em 2em;
+   grid-template-areas:
+     "name"
+     "desc"
+   gap: 2px;
+   background: green;
+  }
+ #button1 {top:440px; left: 700px;}
+ .button .color { display:none; }
+ .button .stats { display:none; }
+ .button .attack { display:none; }
+ .button .health { display:none; }
+ .button .blank { display:none; }
+ .button .type { display:none; }
    
   #Ax { transform:rotate(-50deg); top:460px; left:55px; }
   #DoL { transform:rotate(-35deg); top:445px; left:110px; }
@@ -174,7 +198,10 @@
 
 <div class="minioncontainer" id="minioncontainer1" style="top:180px; left:60px;"></div>
 
-<div class="button" id="button1" style="top:440px; left:700px;"> Draw Card </div>
+<div class="button" id="button1" style="top:440px; left:700px;">
+  <div class="cell name center"><p> Draw Card </p></div>
+  
+</div>
   
   <script>
     function view(el) { 
@@ -197,6 +224,6 @@
       newCard.removeAttribute("onclick");
     }
   </script>
-<!---- Version 0.1.7.18 ***** Notes: Hand looks kind of unbalanced (currently fixing). Last contributer Henry. --->
+<!---- Version 0.1.7.20 ***** Notes: Hand looks kind of unbalanced (currently fixing). Last contributer Henry. --->
 </body>
 </html>
