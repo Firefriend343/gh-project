@@ -202,10 +202,11 @@
     function draw(el) {
       var container = document.getElementById("hand");
       var drawnCard = document.getElementById("Ax");
-      container.appendChild(drawnCard);
+      var newCard = drawnCard.cloneNode(true);
+      container.appendChild(newCard);
       console.log("you drew a card. It was an axemaster (whoa)");
     }
   </script>
-<!---- Version 0.1.7.27 ***** Notes: This is probably gonna screw up. Last contributer Henry. --->
+<!---- Version 0.1.7.28 ***** Notes: This is probably gonna screw up. Last contributer Henry. --->
 </body>
 </html>
