@@ -5,7 +5,7 @@
  <title> Shadowdale </title>
  <style>
 
- .button { background-color: green; position:absolute; border: solid; color: black; padding: 15px 15px; border-radius: 50%; text-align: center; text-decoration: none; display: inline-block; font-size: 18px; font-family: 'MedievalSharp', cursive; }
+ .button { background-color: green; position:absolute; border: solid; color: black; padding: 15px 15px; border-radius: 50%; text-align: top; text-decoration: none; display: inline-block; font-size: 18px; font-family: 'MedievalSharp', cursive; }
  #button1 { width:80px; height:80px; top:440px; left: 700px;}
 
   #Ax { transform:rotate(-50deg); top:460px; left:55px; }
@@ -171,7 +171,8 @@
 <div id="viewcontainer"></div>
   
 <div class="minioncontainer" id="minioncontainer1" style="top:180px; left:60px;"></div>
-<div class="button" id="button1" style="top:440px; left:700px;"> Draw Card </div>
+  
+<button class="button" id="button1" style="top:440px; left:700px;"> Draw Card </button>
   
   <script>
     function view(el) { 
@@ -194,6 +195,6 @@
       newCard.removeAttribute("onclick");
     }
   </script>
-<!---- Version 0.1.7.18 ***** Notes: Hand looks kind of unbalanced (currently fixing). Last contributer Henry. --->
+<!---- Version 0.1.7.19 ***** Notes: Hand looks kind of unbalanced (currently fixing). Last contributer Henry. --->
 </body>
 </html>
