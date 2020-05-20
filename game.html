@@ -172,7 +172,7 @@
   
 <div class="minioncontainer" id="minioncontainer1" style="top:180px; left:60px;"></div>
   
-<button class="button" id="button1" style="top:440px; left:700px;"> Draw Card </button>
+<button onclick="draw()" class="button" id="button1" style="top:440px; left:700px;"> Draw Card </button>
   
   <script>
     function view(el) { 
@@ -194,7 +194,10 @@
       el.parentNode.removeChild(el);
       newCard.removeAttribute("onclick");
     }
+    function draw(el) {
+      return;
+    }
   </script>
-<!---- Version 0.1.7.19 ***** Notes: Hand looks kind of unbalanced (currently fixing). Last contributer Henry. --->
+<!---- Version 0.1.7.20 ***** Notes: Hand looks kind of unbalanced (currently fixing). Last contributer Henry. --->
 </body>
 </html>
