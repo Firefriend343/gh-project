@@ -97,6 +97,8 @@
        NOTICE: DO NOT SAY "Do Damage", INSTEAD "Deal Damage"
        NOTICE: ALWAYS UPDATE THE VERSION AND THE LAST COMITTER
 ---->
+<div class="hand" id="hand">
+  
 <div class="card" id="Ax" onmouseenter="view(this)" onclick="play(this)"> <!--Axemaster--->
  <div class="cell name center"><p> Axemaster </p></div>
  <div class="cell color center colorless"><p> ⬤ </p></div>
@@ -171,13 +173,14 @@
  <div class="cell type center"><p> Minion - Xanaris Warrior </p></div>
 </div>
   
+</div>
+  
 <div id="viewcontainer"></div>
   
 <div class="minioncontainer" id="minioncontainer1" style="top:180px; left:60px;"></div>
   
 <button onclick="draw(this)" class="button" id="button1" style="top:440px; left:700px;"> Draw Card </button>
   
-<div class="hand" id="hand"></div>
   
   <script>
     function view(el) { 
