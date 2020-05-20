@@ -210,12 +210,12 @@
     }
     function draw(el) {
       var container = document.getElementById("hand");
-      var drawnCard = document.getElementById("Ax");
+      var drawnCard = document.querySelectorAll("#Ax, #DoL, #PaAp, #ThKn, #XaSn, #XaGu");
       var newCard = drawnCard.cloneNode(true);
       container.appendChild(newCard);
       console.log("you drew a card. It was an axemaster (whoa)");
     }
   </script>
-<!---- Version 0.1.8.2 ***** Notes: Axemaster ID changed back(there's a system in the IDs, don't change it). Last commit by Henry. --->
+<!---- Version 0.1.8.3 ***** Notes: Trying to function multiple cards(this will almost certainly break). Last commit by Henry. --->
 </body>
 </html>
