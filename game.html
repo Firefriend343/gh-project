@@ -172,7 +172,7 @@
   
 <div class="minioncontainer" id="minioncontainer1" style="top:180px; left:60px;"></div>
   
-<button onclick="draw()" class="button" id="button1" style="top:440px; left:700px;"> Draw Card </button>
+<button onclick="draw(this)" class="button" id="button1" style="top:440px; left:700px;"> Draw Card </button>
   
   <script>
     function view(el) { 
@@ -195,10 +195,10 @@
       newCard.removeAttribute("onclick");
     }
     function draw(el) {
-      console.log("you died");
-      return;
+      var drawnCard = document.getElementById("Ax");
+      el.appendChild(drawnCard);
     }
   </script>
-<!---- Version 0.1.7.21 ***** Notes: Hand looks kind of unbalanced (currently fixing). Last contributer Henry. --->
+<!---- Version 0.1.7.22 ***** Notes: This is probably gonna screw up. Last contributer Henry. --->
 </body>
 </html>
