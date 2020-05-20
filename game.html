@@ -210,7 +210,7 @@
     }
     function draw(el) {
       var container = document.getElementById("hand");
-      var drawnCard = document.querySelectorAll("#Ax, #DoL, #PaAp, #ThKn, #XaSn, #XaGu");
+      var drawnCard = document.getElementById("Ax");
       var newCard = drawnCard.cloneNode(true);
       container.appendChild(newCard);
       console.log("you drew a card. It was an axemaster (whoa)");
