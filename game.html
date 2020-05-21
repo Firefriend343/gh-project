@@ -295,9 +295,12 @@
       var idToCopy = allIds[randomIndex];
       var drawnCard = document.getElementById(idToCopy);
       var newCard = drawnCard.cloneNode(true);
+      if (container.childElementCount >= 6) {
+        return false;
+      }
       container.appendChild(newCard);
     }
   </script>
-<!---- Version 0.1.8.5 ***** Notes: Trying to function multiple cards(this will almost certainly break). Last commit by Henry. --->
+<!---- Version 0.1.8.6 ***** Notes: Trying to function multiple cards(this will almost certainly break). Last commit by Henry. --->
 </body>
 </html>
