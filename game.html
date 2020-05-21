@@ -17,12 +17,12 @@
  #hand { /* this is a hand */ }
    
   
-  /*#Ax { /*transform:rotate(-50deg); top:460px; left:55px; }
-  #DoL { transform:rotate(-35deg); top:445px; left:110px; }
-  #PaAp { transform:rotate(-20deg); top:445px; left:165px; }
-  #ThKn { transform:rotate(-5deg); top:450px; left:225px; }
-  #XaSn { transform:rotate(15deg); top:465px; left:275px; }
-  #XaGu {transform:rotate(35deg); top: 500px; left: 325px; }*/
+  #Ax { /*transform:rotate(-50deg); top:460px; left:55px; */}
+  #DoL { /*transform:rotate(-35deg); top:445px; left:110px; */}
+  #PaAp { /* transform:rotate(-20deg); top:445px; left:165px; */}
+  #ThKn { /* transform:rotate(-5deg); top:450px; left:225px; */}
+  #XaSn { /* transform:rotate(15deg); top:465px; left:275px; */}
+  #XaGu { /* transform:rotate(35deg); top: 500px; left: 325px; */}
   #viewcontainer { position: absolute; top:440px; left:965px; width:300px; height:360px; }
   #viewcontainer .card { position:absolute; font-size:110%; transform: rotate(0deg); top:0px; left:0px; width: 300px; height: auto; } 
   
@@ -210,12 +210,15 @@
     }
     function draw(el) {
       var container = document.getElementById("hand");
-      var drawnCard = document.getElementById("Ax");
+      var allIds = ["Ax", "DoL", "PaAp", "ThKn", "XaSn", "XaGu"];
+      var randomIndex = Math.floor(Math.random() * allIds.length);
+      var idToCopy = allIds[randomIndex];
+      var drawnCard = document.getElementById(idToCopy);
       var newCard = drawnCard.cloneNode(true);
       container.appendChild(newCard);
       console.log("you drew a card. It was an axemaster (whoa)");
     }
   </script>
-<!---- Version 0.1.8.3 ***** Notes: Trying to function multiple cards(this will almost certainly break). Last commit by Henry. --->
+<!---- Version 0.1.8.4 ***** Notes: Trying to function multiple cards(this will almost certainly break). Last commit by Henry. --->
 </body>
 </html>
