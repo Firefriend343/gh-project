@@ -15,7 +15,8 @@
  #hand > div:nth-child(5) { transform:rotate(15deg); top:465px; left:275px; border:solid brown 20px; }
  #hand > div:nth-child(6) { transform:rotate(25deg); top:500px; left:325px; border:solid pink 20px; }
  #hand { /* this is a hand */ }
-   
+ 
+ #deck {display:none;}
   
   #Ax { /*transform:rotate(-50deg); top:460px; left:55px; */}
   #DoL { /*transform:rotate(-35deg); top:445px; left:110px; */}
@@ -180,6 +181,85 @@
 </div>
   
 </div>
+
+<div class="deck" id="deck">
+  
+<div class="card" id="Ax-D" onmouseenter="view(this)" onclick="play(this)"> <!--Axemaster--->
+ <div class="cell name center"><p> Axemaster </p></div>
+ <div class="cell color center colorless"><p> ⬤ </p></div>
+ <div class="cell stats short"><p>Statistics</p></div>
+ <div class="cell attack center"><p> 5 </p></div>
+ <div class="cell health center"><p> 4 </p></div>
+ <div class="cell cost center">  <p> 5 </p></div>
+ <div class="cell desc long"><p> Draw a card from the Biome Deck. </p></div>
+ <div class="cell blank"></div>
+ <div class="cell type center"><p> Minion - Paladin </p></div>
+</div>
+  
+<div class="card" id="DoL-D" onmouseenter="view(this)" onclick="play(this)"> <!--Disciple Of Lin--->
+ <div class="cell name center"><p> Disciple Of Lin </p></div>
+ <div class="cell color center blue"><p> ⬤ </p></div>
+ <div class="cell stats short"><p>Statistics</p></div>
+ <div class="cell attack center"><p> 3 </p></div>
+ <div class="cell health center"><p> 4 </p></div>
+ <div class="cell cost center">  <p> 3 </p></div>
+ <div class="cell desc long"><p> Flurry </p></div>
+ <div class="cell blank"></div>
+ <div class="cell type center"><p> Minion </p></div>
+</div>
+    
+<div class="card" id="PaAp-D" onmouseenter="view(this)" onclick="play(this)"> <!--Paladin Apprentice--->
+ <div class="cell name center"><p> Paladin Apprentice </p></div>
+ <div class="cell color center yellow"><p> ⬤ </p></div>
+ <div class="cell stats short"><p>Statistics</p></div>
+ <div class="cell attack center"><p> 4 </p></div>
+ <div class="cell health center"><p> 6 </p></div>
+ <div class="cell cost center">  <p> 5 </p></div>
+ <div class="cell desc long"><p> Divine Shield </p></div>
+ <div class="cell blank"></div>
+ <div class="cell type center"><p> Minion - Human Paladin </p></div>
+</div>
+    
+<div class="card" id="ThKn-D" onmouseenter="view(this)" onclick="play(this)"> <!--Thorn Knight--->
+ <div class="cell name center"><p> Thorn Knight </p></div>
+ <div class="cell color center green"><p> ⬤ </p></div>
+ <div class="cell stats short"><p>Statistics</p></div>
+ <div class="cell attack center"><p> 5 </p></div>
+ <div class="cell health center"><p> 5 </p></div>
+ <div class="cell cost center">  <p> 6 </p></div>
+ <div class="cell desc long"><p> Shield. Has Flurry if you have another Green Rune minion. </p></div>
+ <div class="cell blank"></div>
+ <div class="cell type center"><p> Minion - Thornling Knight </p></div>
+</div>
+ 
+  
+<div class="card" id="XaSn-D" onmouseenter="view(this)" onclick="play(this)"> <!--Xanaris Sniper--->
+ <div class="cell name center"><p> Xanaris Sniper </p></div>
+ <div class="cell color center white"><p> ⬤ </p></div>
+ <div class="cell stats short"><p>Statistics</p></div>
+ <div class="cell attack center"><p> 3 </p></div>
+ <div class="cell health center"><p> 2 </p></div>
+ <div class="cell cost center">  <p> 3 </p></div>
+ <div class="cell desc long"><p> Whenever an enemy minion is played, deal 1 damage to it. </p></div>
+ <div class="cell blank"></div>
+ <div class="cell type center"><p> Minion - Xanaris Warrior </p></div>
+</div>
+  
+  
+<div class="card" id="XaGu-D" onmouseenter="view(this)" onclick="play(this)"> <!--Xanaris Guardian--->
+ <div class="cell name center"><p> Xanaris Guard </p></div>
+ <div class="cell color center green"><p> ⬤ </p></div>
+ <div class="cell stats short"><p>Statistics</p></div>
+ <div class="cell attack center"><p> 3 </p></div>
+ <div class="cell health center"><p> 4 </p></div>
+ <div class="cell cost center">  <p> 3 </p></div>
+ <div class="cell desc long"><p> If you have another Xanaris, this has Shield. </p></div>
+ <div class="cell blank"></div>
+ <div class="cell type center"><p> Minion - Xanaris Warrior </p></div>
+</div>
+  
+</div>
+
   
 <div id="viewcontainer"></div>
   
@@ -210,15 +290,14 @@
     }
     function draw(el) {
       var container = document.getElementById("hand");
-      var allIds = ["Ax", "DoL", "PaAp", "ThKn", "XaSn", "XaGu"];
+      var allIds = ["Ax-D", "DoL-D", "PaAp-D", "ThKn-D", "XaSn-D", "XaGu-D"];
       var randomIndex = Math.floor(Math.random() * allIds.length);
       var idToCopy = allIds[randomIndex];
       var drawnCard = document.getElementById(idToCopy);
       var newCard = drawnCard.cloneNode(true);
       container.appendChild(newCard);
-      console.log("you drew a card. It was an axemaster (whoa)");
     }
   </script>
-<!---- Version 0.1.8.4 ***** Notes: Trying to function multiple cards(this will almost certainly break). Last commit by Henry. --->
+<!---- Version 0.1.8.5 ***** Notes: Trying to function multiple cards(this will almost certainly break). Last commit by Henry. --->
 </body>
 </html>
