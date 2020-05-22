@@ -260,16 +260,16 @@
  <div class="cell type center"><p> Minion - Xanaris Warrior </p></div>
 </div>
 
-<div class="card" id="DrLi-D" onmouseenter="view(this)" onclick="play(this)"> <!--Dragonshield Lizardfolk--->
- <div class="cell name center"><p> Dragonshield Lizardfolk </p></div>
+<div class="card" id="PaGu-D" onmouseenter="view(this)" onclick="play(this)"> <!--Palace Guard--->
+ <div class="cell name center"><p> Palace Guard </p></div>
  <div class="cell color center colorless"><p> ⬤ </p></div>
  <div class="cell stats short"><p>Statistics</p></div>
- <div class="cell attack center"><p> 4 </p></div>
+ <div class="cell attack center"><p> 3 </p></div>
  <div class="cell health center"><p> 3 </p></div>
  <div class="cell cost center">  <p> 3 </p></div>
- <div class="cell desc long"><p>  </p></div>
+ <div class="cell desc long"><p> Shield </p></div>
  <div class="cell blank"></div>
- <div class="cell type center"><p> Minion - Lizardfolk Warrior </p></div>
+ <div class="cell type center"><p> Minion - Human Warrior </p></div>
 </div>
 
 <div class="card" id="DaLi-D" onmouseenter="view(this)" onclick="play(this)"> <!--Dark Lizardfolk--->
@@ -317,7 +317,7 @@
     }
     function draw(el) {
       var container = document.getElementById("hand");
-      var allIds = ["Ax-D", "DoL-D", "PaAp-D", "ThKn-D", "XaSn-D", "XaGu-D", "DrLi-D", "DaLi-D"];
+      var allIds = ["Ax-D", "DoL-D", "PaAp-D", "ThKn-D", "XaSn-D", "XaGu-D", "PaGu-D", "DaLi-D"];
       var randomIndex = Math.floor(Math.random() * allIds.length);
       var idToCopy = allIds[randomIndex];
       var drawnCard = document.getElementById(idToCopy);
@@ -328,6 +328,6 @@
       container.appendChild(newCard);
     }
   </script>
-<!---- Version 0.1.8.6 ***** Notes: Trying to function multiple cards(this will almost certainly break). Last commit by Henry. --->
+<!---- Version 0.1.8.9 ***** Notes: Trying to function multiple cards(this will almost certainly break). Last commit by Henry. --->
 </body>
 </html>
