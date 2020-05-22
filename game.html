@@ -18,12 +18,14 @@
  
  #deck {display:none;}
   
-  #Ax { /*transform:rotate(-50deg); top:460px; left:55px; */}
-  #DoL { /*transform:rotate(-35deg); top:445px; left:110px; */}
-  #PaAp { /* transform:rotate(-20deg); top:445px; left:165px; */}
-  #ThKn { /* transform:rotate(-5deg); top:450px; left:225px; */}
-  #XaSn { /* transform:rotate(15deg); top:465px; left:275px; */}
-  #XaGu { /* transform:rotate(35deg); top: 500px; left: 325px; */}
+  #Ax {}
+  #DoL {}
+  #PaAp {}
+  #ThKn {}
+  #XaSn {}
+  #XaGu {}
+  #DrLi {}
+  #DaLi {}
   #viewcontainer { position: absolute; top:440px; left:965px; width:300px; height:360px; }
   #viewcontainer .card { position:absolute; font-size:110%; transform: rotate(0deg); top:0px; left:0px; width: 300px; height: auto; } 
   
@@ -246,7 +248,7 @@
 </div>
   
   
-<div class="card" id="XaGu-D" onmouseenter="view(this)" onclick="play(this)"> <!--Xanaris Guardian--->
+<div class="card" id="XaGu-D" onmouseenter="view(this)" onclick="play(this)"> <!--Xanaris Guard--->
  <div class="cell name center"><p> Xanaris Guard </p></div>
  <div class="cell color center green"><p> ⬤ </p></div>
  <div class="cell stats short"><p>Statistics</p></div>
@@ -257,6 +259,31 @@
  <div class="cell blank"></div>
  <div class="cell type center"><p> Minion - Xanaris Warrior </p></div>
 </div>
+
+<div class="card" id="DrLi-D" onmouseenter="view(this)" onclick="play(this)"> <!--Dragonshield Lizardfolk--->
+ <div class="cell name center"><p> Dragonshield Lizardfolk </p></div>
+ <div class="cell color center colorless"><p> ⬤ </p></div>
+ <div class="cell stats short"><p>Statistics</p></div>
+ <div class="cell attack center"><p> 4 </p></div>
+ <div class="cell health center"><p> 3 </p></div>
+ <div class="cell cost center">  <p> 3 </p></div>
+ <div class="cell desc long"><p>  </p></div>
+ <div class="cell blank"></div>
+ <div class="cell type center"><p> Minion - Lizardfolk Warrior </p></div>
+</div>
+
+<div class="card" id="DaLi-D" onmouseenter="view(this)" onclick="play(this)"> <!--Dark Lizardfolk--->
+ <div class="cell name center"><p> Dark Lizardfolk </p></div>
+ <div class="cell color center black"><p> ⬤ </p></div>
+ <div class="cell stats short"><p>Statistics</p></div>
+ <div class="cell attack center"><p> 4 </p></div>
+ <div class="cell health center"><p> 5 </p></div>
+ <div class="cell cost center">  <p> 4 </p></div>
+ <div class="cell desc long"><p> Ranged </p></div>
+ <div class="cell blank"></div>
+ <div class="cell type center"><p> Minion - Demon Lizardfolk </p></div>
+</div>
+
   
 </div>
 
@@ -290,7 +317,7 @@
     }
     function draw(el) {
       var container = document.getElementById("hand");
-      var allIds = ["Ax-D", "DoL-D", "PaAp-D", "ThKn-D", "XaSn-D", "XaGu-D"];
+      var allIds = ["Ax-D", "DoL-D", "PaAp-D", "ThKn-D", "XaSn-D", "XaGu-D", "DrLi-D", "DaLi-D"];
       var randomIndex = Math.floor(Math.random() * allIds.length);
       var idToCopy = allIds[randomIndex];
       var drawnCard = document.getElementById(idToCopy);
