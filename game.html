@@ -7,7 +7,7 @@
 
  .button { position:absolute; border: solid; color: black; padding: 15px 15px; border-radius: 50%; text-align: top; text-decoration: none; display: inline-block; font-size: 18px; font-family: 'MedievalSharp', cursive; }
  #button1 { width:80px; height:80px; top:440px; left: 700px; background-color: green; }
- #button2 { width:80px; height:80px; top:540px; left: 700px; background-color: darkblue; }
+ #button2 { width:80px; height:80px; top:540px; left: 700px; background-color: lightblue; }
  .hand { width:400px; height:50px; top:445px; left:50px; }
  #hand > div:nth-child(1) { transform:rotate(-50deg); top:460px; left:55px; border:solid red 20px; }
  #hand > div:nth-child(2) { transform:rotate(-35deg); top:445px; left:110px; border:solid green 20px; }
@@ -318,7 +318,7 @@
  <div class="cell cost center">  <p> 4 </p></div>
  <div class="cell desc long"><p>  </p></div>
  <div class="cell blank"></div>
- <div class="cell type center"><p> Minion </p></div>
+ <div class="cell type center"><p> Minion - Noble </p></div>
 </div>
     
 <div class="card" id="DeKn-E" onmouseenter="view(this)" > <!--Death Knight--->
@@ -330,7 +330,7 @@
  <div class="cell cost center">  <p> 5 </p></div>
  <div class="cell desc long"><p>  </p></div>
  <div class="cell blank"></div>
- <div class="cell type center"><p>  </p></div>
+ <div class="cell type center"><p> Minion - Knight </p></div>
 </div>
     
 <div class="card" id="PoSl-E" onmouseenter="view(this)" onclick="play(this)"> <!--Possessed Slave--->
@@ -339,10 +339,10 @@
  <div class="cell stats short"><p>Statistics</p></div>
  <div class="cell attack center"><p> 2 </p></div>
  <div class="cell health center"><p> 2 </p></div>
- <div class="cell cost center">  <p> 6 </p></div>
+ <div class="cell cost center">  <p> 4 </p></div>
  <div class="cell desc long"><p>  </p></div>
  <div class="cell blank"></div>
- <div class="cell type center"><p>  </p></div>
+ <div class="cell type center"><p> Minion </p></div>
 </div>
  
   
@@ -354,8 +354,8 @@
  <div class="cell health center"><p> 7 </p></div>
  <div class="cell cost center">  <p>  </p></div>
  <div class="cell desc long"><p>  </p></div>
- <div class="cell blank"></div>
- <div class="cell type center"><p>  </p></div>
+ <div class="cell blank"> dan the man will join a clan </div>
+ <div class="cell type center"><p> Minion </p></div>
 </div>
   
   
@@ -368,10 +368,10 @@
  <div class="cell cost center">  <p> 3 </p></div>
  <div class="cell desc long"><p> </p></div>
  <div class="cell blank"></div>
- <div class="cell type center"><p> </p></div>
+ <div class="cell type center"><p> Minion - Knight </p></div>
 </div>
 
-</div> <!--end of enemies--->
+</div> 
   
   
 <div id="viewcontainer"></div>
@@ -379,7 +379,7 @@
 <div class="minioncontainer" id="minioncontainer1" style="top:180px; left:60px;"></div>
   
 <button onclick="draw(this)" class="button" id="button1"> Draw Card </button>
-<button onclick="draw(this)" class="button" id="button2"> Attack(draw) </button>
+<button onclick="attack(Ax-M)" class="button" id="button2"> Attack </button>
   
   
   <script>
@@ -414,7 +414,12 @@
       }
       container.appendChild(newCard);
     }
+    function attack(el) {
+      var attackingContainer = document.getElementById("minioncontainer1");
+      var newTop = attackingContainer.offsetTop + 30;
+      attackingContainer.style.top = newTop + "px";
+    }
   </script>
-<!---- Version 0.1.9.3 ***** Notes: Trying to function enemy cards(this will almost certainly break). Last commit by Henry. --->
+<!---- Version 0.1.9.4 ***** Notes: Trying to function enemy cards(this will almost certainly break). Last commit by Henry. --->
 </body>
 </html>
