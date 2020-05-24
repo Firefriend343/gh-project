@@ -5,8 +5,9 @@
  <title> Shadowdale </title>
  <style>
 
- .button { background-color: green; position:absolute; border: solid; color: black; padding: 15px 15px; border-radius: 50%; text-align: top; text-decoration: none; display: inline-block; font-size: 18px; font-family: 'MedievalSharp', cursive; }
- #button1 { width:80px; height:80px; top:440px; left: 700px;}
+ .button { position:absolute; border: solid; color: black; padding: 15px 15px; border-radius: 50%; text-align: top; text-decoration: none; display: inline-block; font-size: 18px; font-family: 'MedievalSharp', cursive; }
+ #button1 { width:80px; height:80px; top:440px; left: 700px; background-color: green; }
+ #button2 { width:80px; height:80px; top:540px; left: 700px; background-color: darkblue; }
  .hand { width:400px; height:50px; top:445px; left:50px; }
  #hand > div:nth-child(1) { transform:rotate(-50deg); top:460px; left:55px; border:solid red 20px; }
  #hand > div:nth-child(2) { transform:rotate(-35deg); top:445px; left:110px; border:solid green 20px; }
@@ -377,7 +378,8 @@
   
 <div class="minioncontainer" id="minioncontainer1" style="top:180px; left:60px;"></div>
   
-<button onclick="draw(this)" class="button" id="button1" style="top:440px; left:700px;"> Draw Card </button>
+<button onclick="draw(this)" class="button" id="button1"> Draw Card </button>
+<button onclick="draw(this)" class="button" id="button2"> Attack(draw) </button>
   
   
   <script>
@@ -413,6 +415,6 @@
       container.appendChild(newCard);
     }
   </script>
-<!---- Version 0.1.8.13 ***** Notes: Trying to function enemy cards(this will almost certainly break). Last commit by Henry. --->
+<!---- Version 0.1.9.3 ***** Notes: Trying to function enemy cards(this will almost certainly break). Last commit by Henry. --->
 </body>
 </html>
