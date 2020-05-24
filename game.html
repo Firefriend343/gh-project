@@ -37,7 +37,25 @@
   .minioncontainer .card .blank { display:none; }
   .minioncontainer .card .type { display:none; }
   #minioncontainer1 { position:relative;  }  
+  
+  .enemyminions { height:120px; }
+  .enemyminions .card { position:absolute; font-size:80%; transform: rotate(0deg); top:0px; left:0px; width: 125px; height: auto; } 
+  .enemyminions .card .stats { display:none; }
+  .enemyminions .card .desc { display:none; }
+  .enemyminions .card .cost { display:none; }
+  .enemyminions .card .blank { display:none; }
+  .enemyminions .card .type { display:none; }
+  #enemyminions {}
    
+ .enemyminions .card { 
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 2em 2em;
+    grid-template-areas:
+    "name   name   name"
+    "attack color health";
+    position:relative;
+   }  
+ 
   .card { 
    position:absolute;
    width: 200px;
@@ -287,6 +305,72 @@
   
 </div>
 
+<div class="enemyminions" id="enemyminions">
+  
+<div class="card" id="EvEm-E" onmouseenter="view(this)" > <!--Evil Emperor--->
+ <div class="cell name center"><p> Evil Emperor </p></div>
+ <div class="cell color center black"><p> ⬤ </p></div>
+ <div class="cell stats short"><p>Statistics</p></div>
+ <div class="cell attack center"><p> 7 </p></div>
+ <div class="cell health center"><p> 2 </p></div>
+ <div class="cell cost center">  <p> 4 </p></div>
+ <div class="cell desc long"><p>  </p></div>
+ <div class="cell blank"></div>
+ <div class="cell type center"><p> Minion </p></div>
+</div>
+    
+<div class="card" id="DeKn-E" onmouseenter="view(this)" > <!--Death Knight--->
+ <div class="cell name center"><p> Death Knight </p></div>
+ <div class="cell color center black"><p> ⬤ </p></div>
+ <div class="cell stats short"><p>Statistics</p></div>
+ <div class="cell attack center"><p> 4 </p></div>
+ <div class="cell health center"><p> 6 </p></div>
+ <div class="cell cost center">  <p> 5 </p></div>
+ <div class="cell desc long"><p>  </p></div>
+ <div class="cell blank"></div>
+ <div class="cell type center"><p>  </p></div>
+</div>
+    
+<div class="card" id="PoSl-E" onmouseenter="view(this)" onclick="play(this)"> <!--Possessed Slave--->
+ <div class="cell name center"><p> Possessed Slave </p></div>
+ <div class="cell color center colorless"><p> ⬤ </p></div>
+ <div class="cell stats short"><p>Statistics</p></div>
+ <div class="cell attack center"><p> 2 </p></div>
+ <div class="cell health center"><p> 2 </p></div>
+ <div class="cell cost center">  <p> 6 </p></div>
+ <div class="cell desc long"><p>  </p></div>
+ <div class="cell blank"></div>
+ <div class="cell type center"><p>  </p></div>
+</div>
+ 
+  
+<div class="card" id="Vo-E" onmouseenter="view(this)" onclick="play(this)"> <!--Void--->
+ <div class="cell name center"><p> Void </p></div>
+ <div class="cell color center black"><p> ⬤ </p></div>
+ <div class="cell stats short"><p>Statistics</p></div>
+ <div class="cell attack center"><p> 7 </p></div>
+ <div class="cell health center"><p> 7 </p></div>
+ <div class="cell cost center">  <p>  </p></div>
+ <div class="cell desc long"><p>  </p></div>
+ <div class="cell blank"></div>
+ <div class="cell type center"><p>  </p></div>
+</div>
+  
+  
+<div class="card" id="ArGu-E" onmouseenter="view(this)" onclick="play(this)"> <!--Archmage's Guard--->
+ <div class="cell name center"><p> Archmage's Guard </p></div>
+ <div class="cell color center red"><p> ⬤ </p></div>
+ <div class="cell stats short"><p>Statistics</p></div>
+ <div class="cell attack center"><p> 3 </p></div>
+ <div class="cell health center"><p> 4 </p></div>
+ <div class="cell cost center">  <p> 3 </p></div>
+ <div class="cell desc long"><p> </p></div>
+ <div class="cell blank"></div>
+ <div class="cell type center"><p> </p></div>
+</div>
+
+</div> <!--end of enemies--->
+  
   
 <div id="viewcontainer"></div>
   
@@ -328,6 +412,6 @@
       container.appendChild(newCard);
     }
   </script>
-<!---- Version 0.1.8.9 ***** Notes: Trying to function multiple cards(this will almost certainly break). Last commit by Henry. --->
+<!---- Version 0.1.8.10 ***** Notes: Trying to function enemy cards(this will almost certainly break). Last commit by Henry. --->
 </body>
 </html>
