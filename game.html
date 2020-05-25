@@ -379,7 +379,7 @@
 <div class="minioncontainer" id="minioncontainer1" style="top:180px; left:60px;"></div>
   
 <button onclick="draw(this)" class="button" id="button1"> Draw Card </button>
-<button onclick="attack(this)" class="button" id="button2"> Attack </button>
+<button onclick="attack(Ax-M)" class="button" id="button2"> Attack </button>
   
   
   <script>
@@ -414,12 +414,16 @@
       }
       container.appendChild(newCard);
     }
-    function attack(el) {
+    /*function attack(el) {
       var attackingContainer = document.getElementById("minioncontainer1");
       var newTop = attackingContainer.offsetTop + 30;
       attackingContainer.style.top = newTop + "px";
+    }*/
+    function attack(el) {
+      var newTop = el.offsetTop + 30;
+      el.style.top = newTop + "px";
     }
   </script>
-<!---- Version 0.1.9.5 ***** Notes: Trying to function enemy cards(this will almost certainly break). Last commit by Henry. --->
+<!---- Version 0.1.9.7 ***** Notes: Trying to function enemy cards(this will almost certainly break). Last commit by Henry. --->
 </body>
 </html>
