@@ -379,7 +379,7 @@
 <div class="minioncontainer" id="minioncontainer1" style="top:180px; left:60px;"></div>
   
 <button onclick="draw(this)" class="button" id="button1"> Draw Card </button>
-<button onclick="attack(Ax-M)" class="button" id="button2"> Attack </button>
+<button onclick="attack(this)" class="button" id="button2"> Attack </button>
   
   
   <script>
@@ -420,6 +420,7 @@
       attackingContainer.style.top = newTop + "px";
     }*/
     function attack(el) {
+      var attackingContainer = document.getElementById("Ax-M");
       var newTop = el.offsetTop + 30;
       el.style.top = newTop + "px";
     }
