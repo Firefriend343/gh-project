@@ -7,7 +7,7 @@
 
  .button { position:absolute; border: solid; color: black; padding: 15px 15px; border-radius: 50%; text-align: top; text-decoration: none; display: inline-block; font-size: 18px; font-family: 'MedievalSharp', cursive; }
  #button1 { width:80px; height:80px; top:440px; left: 700px; background-color: green; }
- #button2 { width:80px; height:80px; top:540px; left: 700px; background-color: lightblue; }
+ #button2 { width:80px; height:80px; top:620px; left: 700px; background-color: lightblue; }
  .hand { width:400px; height:50px; top:445px; left:50px; }
  #hand > div:nth-child(1) { transform:rotate(-50deg); top:460px; left:55px; border:solid red 20px; }
  #hand > div:nth-child(2) { transform:rotate(-35deg); top:445px; left:110px; border:solid green 20px; }
@@ -421,8 +421,8 @@
     }*/
     function attack(el) {
       var attackingContainer = document.getElementById("Ax-M");
-      var newTop = el.offsetTop + 30;
-      el.style.top = newTop + "px";
+      var newTop = attackingContainer.offsetTop + 30;
+      attackingContainer.style.top = newTop + "px";
     }
   </script>
 <!---- Version 0.1.9.7 ***** Notes: Trying to function enemy cards(this will almost certainly break). Last commit by Henry. --->
