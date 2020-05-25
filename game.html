@@ -388,6 +388,7 @@
       var container = document.getElementById("viewcontainer");
       while (container.firstChild) { container.removeChild(container.firstChild); }
       var newCard = el.cloneNode(true);
+      newCard.id = newCard.id + "-V";
       container.appendChild(newCard);
     }
     function play(el) {
