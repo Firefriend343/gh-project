@@ -402,7 +402,6 @@
       container.appendChild(newCard);
       el.parentNode.removeChild(el);
       newCard.removeAttribute("onclick");
-      newCard.addEventListener("onclick", attack);
     }
     function draw(el) {
       var container = document.getElementById("hand");
@@ -416,17 +415,18 @@
       }
       container.appendChild(newCard);
     }
-    /*function attack(el) {
+    function attack(el) {
       var attackingContainer = document.getElementById("minioncontainer1");
       var newTop = attackingContainer.offsetTop + 30;
       attackingContainer.style.top = newTop + "px";
-    }*/
-    function attack(el) {
-      var attackingContainer = document.getElementById("Ax-M");
-      var newTop = attackingContainer.offsetTop + 30;
+      setTimeout(function(){attack2()}400);
+    }
+    function attack2(el) {
+      var attackingContainer = document.getElementById("minioncontainer1");
+      var newTop = attackingContainer.offsetTop - 200;
       attackingContainer.style.top = newTop + "px";
     }
   </script>
-<!---- Version 0.1.9.9 ***** Notes: Trying to function enemy cards(this will almost certainly break). Last commit by Henry. --->
+<!---- Version 0.1.9.10 ***** Notes: Trying to function enemy cards(this will almost certainly break). Last commit by Henry. --->
 </body>
 </html>
