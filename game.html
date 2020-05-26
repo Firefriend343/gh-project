@@ -37,7 +37,7 @@
   .minioncontainer .card .cost { display:none; }
   .minioncontainer .card .blank { display:none; }
   .minioncontainer .card .type { display:none; }
-  #minioncontainer1 { position:relative;  }  
+  #minioncontainer1 { position:relative; transition:0.6s }  
   
   .enemyminions { position:absolute; height:120px; width:auto; top:20px; left:60px;}
   .enemyminions .card { position:absolute; font-size:80%; transform: rotate(0deg); top:0px; left:0px; width: 125px; height: auto; } 
@@ -425,10 +425,18 @@
     }
     function attack2() {
       var attackingContainer = document.getElementById("minioncontainer1");
-      var newTop = attackingContainer.offsetTop - 200;
+      var newTop = attackingContainer.offsetTop - 400;
+      attackingContainer.style.top = newTop + "px";
+      setTimeout(function(){
+        attack3()
+      },400);
+    }
+    function attack3()
+      var attackingContainer = document.getElementById("minioncontainer1");
+      var newTop = attackingContainer.offsetTop + 370;
       attackingContainer.style.top = newTop + "px";
     }
   </script>
-<!---- Version 0.1.9.12 ***** Notes: Trying to function enemy cards(this will almost certainly break). Last commit by Henry. --->
+<!---- Version 0.1.9.13 ***** Notes: Trying to function enemy cards(this will almost certainly break). Last commit by Henry. --->
 </body>
 </html>
