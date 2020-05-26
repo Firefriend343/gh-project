@@ -402,6 +402,7 @@
       container.appendChild(newCard);
       el.parentNode.removeChild(el);
       newCard.removeAttribute("onclick");
+      newCard.addEventListener("onclick", attack);
     }
     function draw(el) {
       var container = document.getElementById("hand");
@@ -426,6 +427,6 @@
       attackingContainer.style.top = newTop + "px";
     }
   </script>
-<!---- Version 0.1.9.8 ***** Notes: Trying to function enemy cards(this will almost certainly break). Last commit by Henry. --->
+<!---- Version 0.1.9.9 ***** Notes: Trying to function enemy cards(this will almost certainly break). Last commit by Henry. --->
 </body>
 </html>
