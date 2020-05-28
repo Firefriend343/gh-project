@@ -27,6 +27,7 @@
   #XaGu {}
   #DrLi {}
   #DaLi {}
+  #EvEm-D {}
   #viewcontainer { position: absolute; top:440px; left:965px; width:300px; height:360px; }
   #viewcontainer .card { position:absolute; font-size:110%; transform: rotate(0deg); top:0px; left:0px; width: 300px; height: auto; } 
   
@@ -436,9 +437,9 @@
       var newTop = 180;
       attackingContainer.style.top = newTop + "px";
       var killedContainer = document.getElementById("enemyminions");
-      killedContainer.style.display = none;
+      killedContainer.removeChild(document.getElementById("EvEm-D"));
     }
   </script>
-<!---- Version 0.1.10.4 ***** Notes: Trying to function enemy cards(this will almost certainly break). Last commit by Henry. --->
+<!---- Version 0.1.10.6 ***** Notes: Trying to function enemy cards(this will almost certainly break). Last commit by Henry. --->
 </body>
 </html>
