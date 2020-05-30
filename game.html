@@ -366,8 +366,14 @@
       var newHeight = 0;
       killedContainer.style.width = newWidth + "px";
       killedContainer.style.height = newHeight + "px";
-      killedContainer.parentNode.removeChild(killedContainer);
+      setTimeout(function(){
+        attack4()
+      },400);
     }
+   function attack4() {
+     var killedContainer = document.getElementById("enemyminions");
+     killedContainer.parentNode.removeChild(killedContainer);
+   }
    
   </script>
 <!---- Version 0.1.11.2 ***** Notes: Trying to function enemy cards(this will almost certainly break). Last commit by Henry. --->
