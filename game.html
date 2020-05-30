@@ -39,7 +39,7 @@
   .minioncontainer .card .type { display:none; }
   #minioncontainer1 { position:relative; transition:0.6s }  
   
-  .enemyminions { position:absolute; height:120px; width:auto; top:20px; left:70px;}
+  .enemyminions { position:absolute; height:120px; width:auto; top:20px; left:70px; transition:0.3s; }
   .enemyminions .card { position:absolute; font-size:80%; transform: rotate(0deg); top:0px; left:0px; width: 125px; height: auto; } 
   .enemyminions .card .stats { display:none; }
   .enemyminions .card .desc { display:none; }
@@ -362,10 +362,14 @@
       var newTop = 180;
       attackingContainer.style.top = newTop + "px";
       var killedContainer = document.getElementById("enemyminions");
+      var newWidth = 0;
+      var newHeight = 0;
+      killedContainer.style.width = newWidth + "px";
+      killedContainer.style.height = newHeight + "px";
       killedContainer.parentNode.removeChild(killedContainer);
     }
    
   </script>
-<!---- Version 0.1.10.10 ***** Notes: Trying to function enemy cards(this will almost certainly break). Last commit by Henry. --->
+<!---- Version 0.1.11.2 ***** Notes: Trying to function enemy cards(this will almost certainly break). Last commit by Henry. --->
 </body>
 </html>
